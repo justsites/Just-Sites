@@ -1,41 +1,72 @@
 body {
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    scroll-behavior: smooth;
 }
 
-.login-box {
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #111;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
     background: white;
-    padding: 40px;
-    border-radius: 10px;
-    width: 300px;
+    color: #833ab4;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 20px;
     text-align: center;
 }
 
-.login-box h1 {
-    margin-bottom: 20px;
+.gray {
+    background: #f4f4f4;
 }
 
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.features-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background: #833ab4;
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+footer {
+    background: #111;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.login-box button:hover {
-    background: #5a2a7a;
+    text-align: center;
+    padding: 20px;
 }
